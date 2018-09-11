@@ -1,0 +1,308 @@
+
+@import "elements.less";
+
+/* Set's border, padding and margin to 0 for all values */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body, html {
+    color: #373C40;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin:10px;
+}
+body {
+    font-size: 70%;
+}
+
+p {
+    padding: 7px 0 7px 0;
+    font-weight: 500;
+    font-size: 10pt;
+}
+
+a {
+    color: #656565;
+    text-decoration:none;
+}
+
+a:hover {
+    color: #4C99CC;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight:200;
+    color: #888888;
+    font-size:16pt;
+    padding-left:3px;
+    margin:8px;
+}
+
+.clear{
+	width:100%;
+	float:none;
+	clear:both;
+}
+
+form.expression {
+/*   width:800px; */
+    margin: 20px auto 0px 0px;
+    background-color:#fff;
+    padding:5px;
+}
+
+fieldset.row1{
+    width:100%; 
+    padding:5px;
+    border-top:1px solid #F5F5F5;
+    margin-bottom:15px;
+}
+
+fieldset.row2 {
+	border-top: 1px solid #F1F1F1;
+	padding: 5px;
+	margin-bottom: 15px;
+	width: 100%;
+
+}
+
+
+.expression .form label{
+    text-align: left;
+    margin-right: 5px;
+    margin-top:2px;
+    width:auto;
+}
+
+.expression .form input{
+	width:auto;
+}
+
+.form table{
+	border: 1px solid black;
+}
+
+.form td{
+	border-right:1px solid #F1F1F1;
+	border-top:1px solid #F1F1F1;
+	border-bottom:1px solid #F1F1F1;
+	border-left:0px solid #F1F1F1;
+	padding:2px;
+	margin:0;
+}
+
+.expression legend{
+    color: #4C99CC;
+    padding:2px;
+    margin-left: 14px;
+    font-weight:bold;
+    font-size: 14px;
+    font-weight:100;
+}
+
+.expression label{
+    color:#444;
+    width:100px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+}
+
+form.expression input{
+    width: auto;
+    color: #505050;
+    margin-right: 5px;
+}
+
+form.expression input[type=radio]{
+    width:15px;
+}
+
+form.expression input[type=checkbox]{
+}
+
+form.expression input[type=text]{
+    border: 1px solid #E1E1E1;
+/*    height: 18px; */
+    font-size:8pt;
+}
+
+form.expression input[type=number]{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+    font-size:8pt;
+}
+
+form.expression input[type=button] {
+	font-size:8pt;
+}
+
+form.expression input[type=button]:hover{
+	cursor:pointer;
+	background:#ccc;
+}
+
+form.expression select{
+    border: 1px solid #E1E1E1;
+    float:left;
+    margin-bottom:3px;
+    color: #505050;
+    margin-right:5px;
+    height: 18px;
+    font-size:8pt;
+}
+
+#selectSensor {
+	font-size:8pt;
+}
+
+input:focus, select:focus{
+    background-color: #F1F1F1;
+}
+
+form.expression  .submit{
+    color: #fff;
+    cursor: pointer;
+    float:left;
+    margin-top:10px;
+    margin-bottom:10px;
+	padding:5px;
+	background: #4C99CC;
+	background-image: linear-gradient(bottom,rgba(0, 0, 0, 0.1) 0,rgba(255, 255, 255, 0.1) 100%);
+	background-image: -o-linear-gradient(bottom,rgba(0, 0, 0, 0.1) 0,rgba(255, 255, 255, 0.1) 100%);
+	background-image: -moz-linear-gradient(bottom,rgba(0, 0, 0, 0.1) 0,rgba(255, 255, 255, 0.1) 100%);
+	background-image: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.1) 0,rgba(255, 255, 255, 0.1) 100%);
+	background-image: -ms-linear-gradient(bottom,rgba(0, 0, 0, 0.1) 0,rgba(255, 255, 255, 0.1) 100%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,rgba(0, 0, 0, 0.1)),color-stop(1,rgba(255, 255, 255, 0.1)));
+
+}
+form.expression  .submit:hover{
+	background:#505050;
+
+}
+form.expression  .submit:active{
+	background:#ccc;
+		color: #000;
+}
+
+#tooltip {
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  top:0px;
+  left:0px;
+  background-color: #000;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  .opacity(0.8);
+  .rounded(5px);
+}
+
+#list {
+	border: 4px solid lightgrey;
+	border-collapse: collapse;
+	border-spacing: 1px 1px;
+}
+
+
+
+form p {
+    font-size: 8pt;
+/*    clear:both; */
+    margin: 0;
+    color:gray;
+    padding:4px;
+}
+
+#sensor {
+	float: left;
+}
+
+#head-temp {
+	position:relative;
+	bottom:100px;
+	left:10px;
+	color:#FFFF00;
+	font-size:20px;
+	font-family:Arial;
+	margin: 0;
+}
+
+div.header {
+	background: url("/img/header.jpg");
+	color: white;
+	margin:0;
+	padding:0;
+}
+
+#menu { /* Левая колонка */
+	float: left; /* Обтекание справа */
+    border: 1px solid #333; /* Параметры рамки вокруг */
+    width: 200px; /* Ширина колонки */
+    padding: 5px; /* Поля вокруг текста */
+    margin: 10px 10px 20px 5px; /* Значения отступов */
+    background: #0B73AB;
+    color: #FFFFFF;
+    font-size:14px;
+}
+
+#menu div {
+    padding: 2px; /* Поля вокруг ссылок */
+}
+
+#menu a {
+    display: block; /* Отображать ссылку как блок */
+    padding: 2px; /* Поля вокруг ссылок */
+    margin: 1px; /* Отступы вокруг */
+    font-size: 0.9em; /* Размер текста */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    color: #FFFFFF;
+}
+
+#menu a:hover {
+    background: #203160; /* Цвет фона */
+    border: 1px dashed #634f36; /* Добавление пунктирной рамки */
+    margin: 0; /* Убираем поля */
+}
+
+#content { /* Правая колонка */
+    margin: 10px 5px 20px 225px; /* Значения отступов */
+    padding: 5px; /* Поля вокруг текста */
+ /*   border: 1px solid #333;   Параметры рамки */
+}
+
+.line {
+    border-bottom: 1px groove #333; /* Линия между ссылками */
+}
+
+#foot { /* Нижний блок */
+    background: #203160; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    clear: both; /* Отменяем обтекание */
+}
+
+.expression legend {
+    color: #4C99CC;
+    padding:2px;
+    margin-left: 14px;
+    font-weight:bold;
+    font-size: 14px;
+    font-weight:100;
+}
+
+.expression label{
+    color:#444;
+/*    width:100px;
+    float: left; */
+    text-align: right;
+    margin-right: 6px;
+    margin-top:3px;
+}
+

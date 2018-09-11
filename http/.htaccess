@@ -1,0 +1,4 @@
+AuthName "Secure Area"
+AuthType Basic
+AuthUserFIle /home/dmitry/ldv80.perets.su/.htpasswd
+require valid-user

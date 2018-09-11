@@ -1,0 +1,12 @@
+{
+    "require": {
+        "influxdb/influxdb-php": "^1.14"
+    }
+
+    "require" {},
+    "autoload": {
+        "psr-4": {
+            "myns\\": "src/"
+        }
+    }
+}
